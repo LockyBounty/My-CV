@@ -1,0 +1,72 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to top right, red, blue);
+}
+
+[class^="griditem"] {
+   color: white;
+  text-align: center;
+  /*background-color: blue;*/
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 100px);
+  grid-template-areas: "header header header header1"
+                       "main main sidebar sidebar"
+                        "main main sidebar sidebar"
+                       "footer footer footer footer";
+  grid-auto-flow: dense;
+  grid-gap: 10px;
+}
+
+.griditem1 {
+  grid-area: header;
+}
+
+.griditem01{
+	grid-area: header1;
+	align-content: justify;
+}
+
+.griditem2 {
+  grid-area: main;
+}
+
+.griditem3 {
+  grid-area: sidebar;
+}
+
+.griditem4 {
+  grid-column-start: main-start;
+  grid-column-end: sidebar-end;
+  background-color: rgba(250, 0, 0, .5);
+  grid-row: 3;
+}
+
+.griditem5 {
+  background-color: rgba(250, 0, 0, .5);
+  grid-column-start: sidebar-start; /* only takes up one cell because grid-column-end default value is one */
+  grid-row-start: sidebar-start;
+}
+
+.griditem6 {
+  grid-area: footer;}
+  
+.logo {
+  grid-area: footer;
+  align-content: center;
+  
+  max-width:70px;
+  max-height: 70px; 
+  padding: 20px;
+}
+.rounded {
+	width: 300px;
+	margin:auto;
+	border-radius:50%;
+}
