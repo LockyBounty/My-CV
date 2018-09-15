@@ -13,15 +13,16 @@ body {
 
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 100px);
-  grid-template-areas: "header header header header1"
-                       "main main sidebar sidebar"
-                        "main main sidebar sidebar"
-                       "footer footer footer footer";
-  grid-auto-flow: dense;
-  grid-gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto-fill);
+    grid-template-areas: 
+        "header header header header1" 
+        "main main sidebar sidebar" 
+        "main main sidebar sidebar" 
+        "footer footer footer footer";
+    grid-auto-flow: dense;
+    grid-gap: 10px;
 }
 
 .grid-container--fill {
@@ -34,7 +35,7 @@ body {
 
 .griditem01{
 	grid-area: header1;
-	align-content: justify;
+	align-content: center;
 }
 
 .griditem2 {
@@ -74,7 +75,17 @@ body {
   
   transform: scale(1.2);
 }
-
+your-img {
+        overflow: hidden;
+    margin: 0;
+}
+    your-img img {
+        display: block; /*remove inline-block spaces*/
+        width: 100%;
+        margin: auto;
+        border-radius: 50%;
+    }
+    }
 
 .rounded {
 	width: 300px;
