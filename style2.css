@@ -56,15 +56,22 @@ body {
 
 .griditem6 {
   grid-area: footer;}
-  
+
 .logo {
   grid-area: footer;
   align-content: center;
-  
+
   max-width:70px;
-  max-height: 70px; 
+  max-height: 70px;
   padding: 20px;
+
 }
+.logo:hover {
+  
+  transform: scale(1.2);
+}
+
+
 .rounded {
 	width: 300px;
 	margin:auto;
