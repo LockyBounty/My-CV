@@ -114,3 +114,11 @@ your-img {
 	margin:auto;
 	border-radius:50%;
 }
+
+.banner {
+    grid-area:1/1/3/6;
+    background-color:black;
+}
+.titre{
+
+}
