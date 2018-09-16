@@ -1,9 +1,17 @@
-.container{
-	display: grid;
-	max-width: 900px;
-	margin:auto;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr 2fr 1fr;
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to top right, red, blue);
+    
+}
+
+
+.container {
+    background-color: red;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(12,1fr);
 }
 
 h1, h2 {
@@ -29,7 +37,8 @@ header{
 }
 
 }
-footer{
-	background-color: dodgerblue;
+.foot1{
+    grid-area:11/3/13/6;
+	background-color: green;
 	
 }

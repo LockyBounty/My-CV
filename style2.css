@@ -10,6 +10,7 @@ body {
     text-align: left;
     padding-left: 50px;
     
+    align-content: space-evenly;
     /*background-color: blue;*/
 }
 h1 {
@@ -27,10 +28,15 @@ h1 {
     display: grid;
     grid-template-columns: repeat(4, auto-fill);
     grid-template-rows: repeat(4, auto-fill);
-    grid-template-areas: "header1 header header header" "main main sidebar sidebar" "main main sidebar sidebar" "main main sidebar sidebar" "footer footer footer footer";
+    grid-template-areas: "header1 header header header" 
+        "main main sidebar sidebar" 
+        "main main sidebar sidebar" 
+        "main main sidebar sidebar" 
+        "footer footer footer footer";
     grid-auto-flow: dense;
     grid-gap: 10px;
     padding: 30px;
+    
 }
 
 .grid-container--fill {
@@ -41,10 +47,14 @@ h1 {
   grid-area: header;
 }
 
-.griditem01{
-	grid-area: header1;
-	align-content: center;
+.griditem01 {
+    grid-area: header1;
+    align-content: center;
+    justify-content: center;
 }
+    .griditem01, h5 {
+        color: yellow;
+    }
 
 .griditem2 {
   grid-area: main;
@@ -95,6 +105,7 @@ your-img {
         width: 100%;
         margin: auto;
         border-radius: 50%;
+        
     }
     }
 
