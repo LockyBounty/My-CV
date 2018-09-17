@@ -3,6 +3,17 @@ body {
   margin: 0;
   padding: 0;
   background-image: linear-gradient(to top right, red, blue);
+  background-repeat: no-repeat;
+  
+}
+
+h1 {
+	padding-left: 50px;
+	text-align: left;
+}
+
+h1, h2 {
+	font-family: "Roboto", "Garamond", , "Calibri", "New Times Roman", "Arial";
 }
 
 [class^="griditem"] {
@@ -44,12 +55,12 @@ body {
 .griditem4 {
   grid-column-start: main-start;
   grid-column-end: sidebar-end;
-  background-color: rgba(250, 0, 0, .5);
+  /*background-color: rgba(250, 0, 0, .5);*/
   grid-row: 3;
 }
 
 .griditem5 {
-  background-color: rgba(250, 0, 0, .5);
+  /*background-color: rgba(250, 0, 0, .5);*/
   grid-column-start: sidebar-start; /* only takes up one cell because grid-column-end default value is one */
   grid-row-start: sidebar-start;
 }
@@ -65,6 +76,13 @@ body {
   max-height: 70px; 
   padding: 20px;
 }
+.logo:hover{
+	-ms-transform: scale(0.5, 0.5); /* IE 9 */
+    -webkit-transform: scale(0.5, 0.5); /* Safari */
+    transform: scale(1.2, 1.2);
+
+}
+
 .rounded {
 	width: 300px;
 	margin:auto;
